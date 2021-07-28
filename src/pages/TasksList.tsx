@@ -18,6 +18,9 @@ const handleTaskDelete = (id:number)=>{
             
         <ContentWrapper>
             {
+                tasks.length===0&&<p className="text-center">No Task</p>
+            }
+            {
                 tasks&&tasks.map((task,index:number)=>(
                     <CardWrapper  key={task.id}>
                         <h3>{index+1}-</h3>

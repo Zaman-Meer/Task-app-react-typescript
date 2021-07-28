@@ -4,7 +4,7 @@ import { ActionTypes } from "./actionTypes";
     switch(action.type) {
         case "ADD_TASK":
             const task:ITask ={
-                id:state.tasks?state.tasks.length+1:0,
+                id:state.tasks?state.tasks.length+1:1,
                 title:action.payload?.title,
                 description:action.payload?.description
             }
